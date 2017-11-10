@@ -1,3 +1,5 @@
+//Resultado:9, Nombre: Diego Armando Medel LUna, Fecha de Nacimiento: 7 de enero de 1997. Con edad=20, p=20.
+
 #include <iostream>
 using namespace std;
 
@@ -25,8 +27,8 @@ int main (){
  while (S!=0){ 
    cout << "ciclo S!=0, S " << S << ",p " << p << endl;
    while(p<S){
-       cout << "ciclo p<S, S " < S << ",p " << p << endl;
-
+       cout << "ciclo p<S, S " << S << ",p " << p << endl;
+       //faltaba un "<"
     while(isPrime(p)==1){
       cout << "ciclo isPrime, S " << S << ",p " << p << endl;
       cout << p << " no es primo  " << endl;
@@ -37,13 +39,15 @@ int main (){
     }  
     
     S=S-p;
-    p=p+2
+    p=p+2;
+    //falataba un ";"
     cout << "final ciclo p<S, S " << S << ",p " << p << endl;
    }
 
-  S=S-1;
-  cout < "final ciclo S!=0, S " << S << ",p " << p << endl;
+   S=S-1;
+  cout<< "final ciclo S!=0, S " << S << ",p " << p << endl;
  }
+ //faltaba un "<"
   
   cout << " el valor de P es " << p << endl;
   return 0;
